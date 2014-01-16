@@ -14,13 +14,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+namespace GoogleApi\Service;
 
-require_once 'Google/Client.php';
-require_once 'Google/Exception.php';
-require_once 'Google/Utils.php';
-require_once 'Google/Http/Request.php';
-require_once 'Google/Http/MediaFileUpload.php';
-require_once 'Google/Http/REST.php';
+use GoogleApi\Google_Client;
+use GoogleApi\Google_Exception;
+use GoogleApi\Google_Utils;
+use GoogleApi\Http\Google_Http_Request;
+use GoogleApi\Http\Google_Http_MediaFileUpload;
+use GoogleApi\Http\Google_Http_REST;
+
 
 /**
  * Implements the actual methods/resources of the discovered Google API using magic function

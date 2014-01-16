@@ -14,7 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-require_once "Google/Http/Request.php";
+
+namespace GoogleApi\Auth;
+
+use GoogleApi\Http\Google_Http_Request;
 
 /**
  * Abstract class for the Authentication in the API client

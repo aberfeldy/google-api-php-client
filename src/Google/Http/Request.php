@@ -15,7 +15,9 @@
  * limitations under the License.
  */
 
-require_once 'Google/Utils.php';
+namespace GoogleApi\Http;
+
+use GoogleApi\Google_Utils;
 
 /**
  * HTTP Request to be executed by IO classes. Upon execution, the

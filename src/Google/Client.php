@@ -15,16 +15,14 @@
  * limitations under the License.
  */
 
-require_once 'Google/Auth/AssertionCredentials.php';
-require_once 'Google/Cache/File.php';
-require_once 'Google/Cache/Memcache.php';
-require_once 'Google/Config.php';
-require_once 'Google/Collection.php';
-require_once 'Google/Exception.php';
-require_once 'Google/IO/Stream.php';
-require_once 'Google/Model.php';
-require_once 'Google/Service.php';
-require_once 'Google/Service/Resource.php';
+namespace GoogleApi;
+
+use GoogleApi\Auth\Google_Auth_AssertionCredentials;
+use GoogleApi\Cache\Google_Cache_File;
+use GoogleApi\Cache\Google_Cache_Memcache;
+use GoogleApi\IO\Google_IO_Stream;
+use GoogleApi\Service\Google_Service_Resource;
+
 
 /**
  * The Google API Client

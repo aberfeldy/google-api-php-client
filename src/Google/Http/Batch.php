@@ -15,9 +15,11 @@
  * limitations under the License.
  */
 
-require_once 'Google/Client.php';
-require_once 'Google/Http/Request.php';
-require_once 'Google/Http/REST.php';
+namespace GoogleApi\Http;
+
+use GoogleApi\Google_Client;
+
+
 
 /**
  * @author Chirag Shah <chirags@google.com>

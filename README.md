@@ -2,10 +2,34 @@
 
 ## Description ##
 The Google API Client Library enables you to work with Google APIs such as Google+, Drive, or YouTube on your server.
+Changed from "require_once" to using namespaces for integration into frameworks
 
 ## Requirements ##
 * [PHP 5.2.1 or higher](http://www.php.net/)
 * [PHP JSON extension](http://php.net/manual/en/book.json.php)
+
+## Installation ##
+
+Open composer.json and add following line section
+```json
+"repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "google/apiclient",
+                "version": "dev-master",
+                "source": {
+                    "url": "https://github.com/aberfeldy/google-api-php-client.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+            }
+        }
+    ],
+"require": {
+        "google/apiclient": "dev-master"
+}
+```
 
 ## Developer Documentation ##
 http://developers.google.com/api-client-library/php
@@ -14,8 +38,6 @@ http://developers.google.com/api-client-library/php
 See the examples/ directory for examples of the key client features.
 ```PHP
 <?php
-  require_once 'Google/Client.php';
-  require_once 'Google/Service/Books.php';
   $client = new Google_Client();
   $client->setApplicationName("Client_Library_Examples");
   $client->setDeveloperKey("YOUR_APP_KEY");

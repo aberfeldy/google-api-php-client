@@ -15,6 +15,8 @@
  * limitations under the License.
  */
 
+namespace GoogleApi;
+
 /**
  * Collection of static utility methods used for convenience across
  * the client library.

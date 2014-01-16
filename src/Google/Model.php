@@ -15,6 +15,8 @@
  * limitations under the License.
  */
 
+namespace GoogleApi;
+
 /**
  * This class defines attributes, valid values, and usage which is generated         
  * from a given json schema.

@@ -15,9 +15,11 @@
  * limitations under the License.
  */
 
-require_once "Google/Auth/OAuth2.php";
-require_once "Google/Signer/P12.php";
-require_once "Google/Utils.php";
+namespace GoogleApi\Auth;
+
+use GoogleApi\Signer\Google_Signer_P12;
+use GoogleApi\Google_Utils;
+
 
 /**
  * Credentials object used for OAuth 2.0 Signed JWT assertion grants.

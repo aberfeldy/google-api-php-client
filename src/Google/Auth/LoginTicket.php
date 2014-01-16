@@ -15,7 +15,8 @@
  * limitations under the License.
  */
 
-require_once "Google/Auth/Exception.php";
+namespace GoogleApi\Auth;
+
 
 /**
  * Class to hold information about an authenticated login.

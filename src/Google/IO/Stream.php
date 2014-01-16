@@ -15,13 +15,14 @@
  * limitations under the License.
  */
 
+
+namespace GoogleApi\IO;
 /**
  * Http Streams based implementation of Google_IO.
  *
  * @author Stuart Langley <slangley@google.com>
  */
 
-require_once 'Google/IO/Abstract.php';
 
 class Google_IO_Stream extends Google_IO_Abstract
 {

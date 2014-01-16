@@ -15,10 +15,11 @@
  * limitations under the License.
  */
 
-require_once 'Google/Client.php';
-require_once 'Google/Http/Request.php';
-require_once 'Google/Service/Exception.php';
-require_once 'Google/Utils/URITemplate.php';
+namespace GoogleApi\Http;
+
+use GoogleApi\Google_Client;
+use GoogleApi\Service\Google_Service_Exception;
+use GoogleApi\Utils\Google_Utils_URITemplate;
 
 /**
  * This class implements the RESTful transport of apiServiceRequest()'s

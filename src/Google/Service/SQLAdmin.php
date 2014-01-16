@@ -14,7 +14,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-
+namespace GoogleApi\Service;
 /**
  * Service definition for SQLAdmin (v1beta3).
  *

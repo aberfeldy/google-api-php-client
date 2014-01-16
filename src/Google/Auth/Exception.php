@@ -15,7 +15,9 @@
  * limitations under the License.
  */
 
-require_once "Google/Exception.php";
+namespace GoogleApi\Auth;
+
+use GoogleApi\Google_Exception;
 
 class Google_Auth_Exception extends Google_Exception
 {

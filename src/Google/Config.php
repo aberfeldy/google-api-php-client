@@ -15,6 +15,8 @@
  * limitations under the License.
  */
 
+namespace GoogleApi;
+
 /**
  * A class to contain the library configuration for the Google API client.
  */

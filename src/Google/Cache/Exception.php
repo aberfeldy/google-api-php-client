@@ -14,7 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-require_once "Google/Exception.php";
+
+namespace GoogleApi\Cache;
+
+use GoogleApi\Google_Exception;
 
 class Google_Cache_Exception extends Google_Exception
 {

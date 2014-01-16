@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
-require_once 'Google/Auth/Exception.php';
-require_once 'Google/Verifier/Abstract.php';
+namespace GoogleApi\Verifier;
+
+use GoogleApi\Auth\Google_Auth_Exception;
 
 /**
  * Verifies signatures using PEM encoded certificates.

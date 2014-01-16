@@ -1,6 +1,7 @@
 <?php
 
-require_once "Google/Model.php";
+namespace GoogleApi;
+
 
 /**
  * Extension to the regular Google_Model that automatically

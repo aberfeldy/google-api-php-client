@@ -14,9 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
-require_once "Google/Cache/Abstract.php";
-require_once "Google/Cache/Exception.php";
+
+namespace GoogleApi\Cache;
+
+
 
 /**
  * A persistent storage class based on the APC cache, which is not

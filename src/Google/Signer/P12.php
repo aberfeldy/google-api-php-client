@@ -14,9 +14,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+namespace GoogleApi\Signer;
 
-require_once 'Google/Auth/Exception.php';
-require_once 'Google/Signer/Abstract.php';
+use GoogleApi\Auth\Google_Auth_Exception;
+use GoogleApi\Signer\Google_Signer_Abstract;
+
 
 /**
  * Signs data.

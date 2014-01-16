@@ -15,14 +15,16 @@
  * limitations under the License.
  */
 
+namespace GoogleApi\IO;
+
 /**
  * Abstract IO base class
  */
 
-require_once 'Google/Client.php';
-require_once 'Google/IO/Exception.php';
-require_once 'Google/Http/CacheParser.php';
-require_once 'Google/Http/Request.php';
+use GoogleApi\Google_Client;
+use GoogleApi\Http\Google_Http_CacheParser;
+use GoogleApi\Http\Google_Http_Request;
+
 
 abstract class Google_IO_Abstract
 {

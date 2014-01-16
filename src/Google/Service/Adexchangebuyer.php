@@ -15,6 +15,8 @@
  * the License.
  */
 
+namespace GoogleApi\Service;
+
 /**
  * Service definition for Adexchangebuyer (v1.3).
  *

@@ -15,6 +15,7 @@
  * the License.
  */
 
+namespace GoogleApi\Service;
 /**
  * Service definition for AdExchangeSeller (v1.1).
  *

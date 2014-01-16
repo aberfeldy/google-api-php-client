@@ -1,6 +1,7 @@
 <?php
 
-require_once 'Google/Exception.php';
+namespace GoogleApi\Service;
+use GoogleApi\Google_Exception;
 
 class Google_Service_Exception extends Google_Exception
 {
