@@ -16,6 +16,6 @@
  */
 namespace GoogleApi;
 
-class Google_Exception extends Exception
+class Google_Exception extends \Exception
 {
 }

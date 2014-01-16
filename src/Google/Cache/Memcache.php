@@ -16,7 +16,7 @@
  */
 
 namespace GoogleApi\Cache;
-
+use GoogleApi\Google_Client;
 
 
 /**
@@ -46,8 +46,9 @@ class Google_Cache_Memcache extends Google_Cache_Abstract
       $this->mc = new Memcached();
       $this->connection = true;
     } else {
-      $this->host = $client->getClassConfig($this, 'host');
-      $this->port = $client->getClassConfig($this, 'port');
+      $this->host = 'localhost';
+      $this->port = '11211';
+
       if (empty($this->host) || empty($this->port)) {
         throw new Google_Cache_Exception("You need to supply a valid memcache host and port");
       }
@@ -124,7 +125,7 @@ class Google_Cache_Memcache extends Google_Cache_Abstract
     }
 
     if (class_exists("Memcached")) {
-      $this->mc = new Memcached();
+      $this->mc = new \Memcached();
       $this->mc->addServer($this->host, $this->port);
        $this->connection = true;
     } else {

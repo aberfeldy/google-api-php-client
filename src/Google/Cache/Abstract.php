@@ -16,6 +16,8 @@
  */
 
 namespace GoogleApi\Cache;
+use GoogleApi\Google_Client;
+
 /**
  * Abstract storage class
  *

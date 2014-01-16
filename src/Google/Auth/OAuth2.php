@@ -16,9 +16,10 @@
  */
 
 namespace GoogleApi\Auth;
-use GoogleApi\Google_Client;
+
 use GoogleApi\Http\Google_Http_Request;
 use GoogleApi\Verifier\Google_Verifier_Pem;
+use GoogleApi\Google_Client;
 
 
 /**

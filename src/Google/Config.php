@@ -40,7 +40,7 @@ class Google_Config
       // Which Authentication, Storage and HTTP IO classes to use.
       'auth_class'    => 'Google_Auth_OAuth2',
       'io_class'      => 'Google_IO_Stream',
-      'cache_class'   => 'Google_Cache_File',
+      'cache_class'   => 'Google_Cache_Memcache',
 
       // Don't change these unless you're working against a special development
       // or testing environment.
@@ -63,7 +63,7 @@ class Google_Config
 
           // Simple API access key, also from the API console. Ensure you get
           // a Server key, and not a Browser key.
-          'developer_key' => '',
+          'developer_key' => 'AIzaSyDX44SEZhKAw1N2XK-swraIYpvqM8XSork',
 
           // Other parameters.
           'access_type' => 'online',
@@ -75,6 +75,10 @@ class Google_Config
         // Set a default directory for the file cache.
         'Google_Cache_File' => array(
           'directory' => sys_get_temp_dir() . '/Google_Client'
+        ),
+        'Google_Chache_Memcache' => array(
+            'host' => 'localhost',
+            'port' => 11211
         )
       ),
 

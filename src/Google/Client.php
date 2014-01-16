@@ -18,10 +18,10 @@
 namespace GoogleApi;
 
 use GoogleApi\Auth\Google_Auth_AssertionCredentials;
-use GoogleApi\Cache\Google_Cache_File;
-use GoogleApi\Cache\Google_Cache_Memcache;
-use GoogleApi\IO\Google_IO_Stream;
-use GoogleApi\Service\Google_Service_Resource;
+use GoogleApi\Auth\Google_Auth_OAuth2;
+use GoogleApi\Http\Google_Http_Batch;
+use GoogleApi\Http\Google_Http_Request;
+use GoogleApi\Http\Google_Http_REST;
 
 
 /**
@@ -84,6 +84,7 @@ class Google_Client
     }
 
     if (is_string($config) && strlen($config)) {
+      $config = new Google_Config($config);
       $config = new Google_Config($config);
     } else if ( !($config instanceof Google_Config)) {
       $config = new Google_Config();
@@ -507,7 +508,7 @@ class Google_Client
   public function getAuth()
   {
     if (!isset($this->auth)) {
-      $class = $this->config->getAuthClass();
+      $class = "GoogleApi\\Auth\\".$this->config->getAuthClass();
       $this->auth = new $class($this);
     }
     return $this->auth;
@@ -519,7 +520,7 @@ class Google_Client
   public function getIo()
   {
     if (!isset($this->io)) {
-      $class = $this->config->getIoClass();
+      $class = "GoogleApi\\IO\\".$this->config->getIoClass();
       $this->io = new $class($this);
     }
     return $this->io;
@@ -531,7 +532,7 @@ class Google_Client
   public function getCache()
   {
     if (!isset($this->cache)) {
-      $class = $this->config->getCacheClass();
+      $class = "GoogleApi\\Cache\\".$this->config->getCacheClass();
       $this->cache = new $class($this);
     }
     return $this->cache;

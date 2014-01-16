@@ -19,6 +19,7 @@ namespace GoogleApi\Cache;
 
 
 
+
 /*
  * This class implements a basic on disk storage. While that does
  * work quite well it's not the most elegant and scalable solution.
@@ -27,6 +28,8 @@ namespace GoogleApi\Cache;
  *
  * @author Chris Chabot <chabotc@google.com>
  */
+use GoogleApi\Google_Client;
+
 class Google_Cache_File extends Google_Cache_Abstract
 {
   const MAX_LOCK_RETRIES = 10;

@@ -166,6 +166,7 @@ class Google_Service_Resource
         null,
         $postBody
     );
+
     $httpRequest->setBaseComponent($this->client->getBasePath());
 
     if ($postBody) {

@@ -17,6 +17,8 @@
 
 
 namespace GoogleApi\IO;
+use GoogleApi\Http\Google_Http_Request;
+
 /**
  * Http Streams based implementation of Google_IO.
  *

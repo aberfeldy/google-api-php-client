@@ -8,7 +8,7 @@ namespace GoogleApi;
  * exposes the items array for iteration, so you can just
  * iterate over the object rather than a reference inside.
  */
-class Google_Collection extends Google_Model implements Iterator, Countable
+class Google_Collection extends Google_Model implements \Iterator, \Countable
 {
   protected $collection_key = 'items';
 

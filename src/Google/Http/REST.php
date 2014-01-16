@@ -85,8 +85,9 @@ class Google_Http_REST
       $decoded = isset($decoded['data']) ? $decoded['data'] : $decoded;
 
       if ($response->getExpectedClass()) {
-        $class = $response->getExpectedClass();
+        $class = "GoogleApi\\Service\\".$response->getExpectedClass();
         $decoded = new $class($decoded);
+
       }
     }
     return $decoded;

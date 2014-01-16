@@ -25,7 +25,7 @@ namespace GoogleApi;
  * @author Chirag Shah <chirags@google.com>
  *
  */
-class Google_Model implements ArrayAccess
+class Google_Model implements \ArrayAccess
 {
   protected $data = array();
   protected $processed = array();

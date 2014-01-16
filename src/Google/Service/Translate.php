@@ -15,6 +15,11 @@
  * the License.
  */
 namespace GoogleApi\Service;
+use GoogleApi\Google_Service;
+use GoogleApi\Google_Collection;
+use GoogleApi\Google_Model;
+use GoogleApi\Google_Client;
+
 /**
  * Service definition for Translate (v2).
  *
@@ -36,6 +41,7 @@ class Google_Service_Translate extends Google_Service
   public $detections;
   public $languages;
   public $translations;
+
   
 
   /**
@@ -45,6 +51,7 @@ class Google_Service_Translate extends Google_Service
    */
   public function __construct(Google_Client $client)
   {
+
     parent::__construct($client);
     $this->servicePath = 'language/translate/';
     $this->version = 'v2';
@@ -85,6 +92,11 @@ class Google_Service_Translate extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                  'key' => array(
+                      'location' => 'query',
+                      'type' => 'string',
+                      'required' => true,
+                  ),
               ),
             ),
           )
@@ -105,6 +117,11 @@ class Google_Service_Translate extends Google_Service
                   'type' => 'string',
                   'repeated' => true,
                   'required' => true,
+                ),
+                'key' => array(
+                      'location' => 'query',
+                      'type' => 'string',
+                      'required' => true,
                 ),
                 'target' => array(
                   'location' => 'query',
