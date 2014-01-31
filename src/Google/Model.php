@@ -17,6 +17,7 @@
 
 namespace GoogleApi;
 
+
 /**
  * This class defines attributes, valid values, and usage which is generated         
  * from a given json schema.
@@ -156,7 +157,7 @@ class Google_Model implements \ArrayAccess
    */
   private function createObjectFromName($name, $item)
   {
-    $type = $this->$name;
+    $type = "GoogleApi\\Service\\".$this->$name;
     return new $type($item);
   }
 
