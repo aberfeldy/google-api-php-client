@@ -72,8 +72,13 @@ class Google_Service_Translate extends Google_Service
                   'type' => 'string',
                   'repeated' => true,
                   'required' => true,
+				),
+                'key' => array(
+                    'location' => 'query',
+                    'type' => 'string',
+                    'required' => true,
                 ),
-              ),
+			  ),
             ),
           )
         )
